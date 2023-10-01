@@ -1,0 +1,82 @@
+/*
+Author: Wanda Azhar
+Location: Michigan, USA
+Profession: Web Developer
+Skills: HTML, CSS, JavaScript, React.js, Next.js, Node.js, Linux (Ubuntu)
+Contact: wandaazhar@gmail.com
+Description: A passionate web developer based in Michigan, USA, with expertise in crafting engaging and responsive web experiences. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React.js, Next.js, and Node.js. Enthusiastic about optimizing user experiences and creating visually appealing websites. With a background in Linux and Ubuntu, I bring a unique perspective to my coding projects. Get in touch to collaborate on exciting web development ventures.
+*/
+@import './responsive.scss';
+@import './variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --background-color: #FEFCF2;
+  --primary: #049E99;
+  --pink: #FFF1F8;
+  --pink-2: #FFE4F1;
+  --yellow: #FFF7D2;
+  --grey: #737373;
+  --black: #000;
+  --white: #FFF;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  --neuphorism: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --outline: .1rem solid rgba(0, 0, 0, .1);
+  --outline-hover: .2rem solid var(--primary);
+}
+
+/* === CSS RESET === */
+* {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  /* transition: all .3s linear; */
+}
+
+/* === END CSS RESET === */
+
+
+
+
+/* === REUSABLE CSS === */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+  // @include phone {
+  //   font-size: 52.5%;
+  // }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: $primary;
+  color: $white;
+}
+
+.btn {
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.wrapContainer {
+  width: 90%;
+  max-width: 133.4rem;
+  margin: 0 auto;
+}
+
+/* === END REUSABLE CSS === */
