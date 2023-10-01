@@ -1,0 +1,148 @@
+@import '../../styles/responsive.scss';
+@import '../../styles/variable.scss';
+
+.header {
+  // border: .1rem solid salmon;
+
+  .wrapContainer {
+    .boxHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .titleLogo {
+          font-size: 1.8rem;
+          color: grey;
+        }
+      }
+
+      .nav {
+        // border: .1rem solid salmon;
+        display: flex;
+        align-items: center;
+
+        @include miniDesktop {
+          display: none;
+        }
+
+        .navUl {
+          display: flex;
+          gap: 2rem;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+
+          .navLi {
+            position: relative;
+            // border: .1rem solid salmon;
+
+            a {
+              font-size: 1.6rem;
+              color: grey;
+
+              &:hover {
+                &::after {
+                  content: '';
+                  width: 100%;
+                  height: .2rem;
+                  background-color: #185ead;
+                  position: absolute;
+                  bottom: -.5rem;
+                  left: 0;
+                  border-radius: .1rem;
+                }
+              }
+            }
+          }
+
+          .navLi.active {
+            &::after {
+              content: '';
+              width: 100%;
+              height: .2rem;
+              background-color: #185ead;
+              position: absolute;
+              bottom: -.5rem;
+              left: 0;
+              border-radius: .1rem;
+            }
+          }
+        }
+      }
+
+      .nav.on {
+        display: block;
+
+        .navUl {
+          flex-direction: column;
+          gap: 5rem;
+          // border: .1rem solid salmon;
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          left: 0;
+          top: 7.2rem;
+          background-color: #fff;
+        }
+      }
+
+      .ctaButton {
+        // border: .1rem solid salmon;
+        display: flex;
+        align-items: center;
+
+        @include miniDesktop {
+          display: none;
+        }
+
+        a {
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .7rem;
+            padding: 1rem;
+            width: 15rem;
+            border-radius: 1rem;
+            border: transparent;
+            background-color: #dd7a01;
+            color: white;
+            font-size: 1.6rem;
+            cursor: pointer;
+
+            .icon {
+              width: 2rem;
+            }
+          }
+        }
+      }
+
+      .iconToggleClose {
+        display: none;
+
+        @include miniDesktop {
+          display: block;
+          cursor: pointer;
+          font-size: 2rem;
+        }
+      }
+
+      .iconToggleMenu {
+        display: none;
+
+        @include miniDesktop {
+          display: block;
+          cursor: pointer;
+          font-size: 2rem;
+
+        }
+      }
+    }
+  }
+}
