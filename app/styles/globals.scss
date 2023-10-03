@@ -50,9 +50,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 
-  // @include phone {
-  //   font-size: 52.5%;
-  // }
+  @include phone {
+    font-size: 52.5%;
+  }
 }
 
 
