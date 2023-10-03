@@ -147,3 +147,17 @@
     }
   }
 }
+
+.svgWave {
+  display: flex;
+
+  svg {
+    // border: .1rem solid salmon;
+    // box-shadow: $boxShadow;
+    filter: drop-shadow(1px 5px 2px rgb(0 0 0 / 0.2));
+    // filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    // height: 5rem;
+    // width: 100%;
+  }
+}
