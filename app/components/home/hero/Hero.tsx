@@ -39,9 +39,11 @@ const Hero: React.FC = () => {
 
             </div>
             <div className="box box2">
+              <Lottie animationData={animation_hi4} loop={true} className='animationHi' />
+            </div>
+            <div className="box box3">
               <Lottie animationData={animation_hi} loop={true} className='animationHi' />
             </div>
-            <div className="box box3">box 3</div>
             {/* <div className="box box4">box 4</div> */}
           </div>
         </div>
