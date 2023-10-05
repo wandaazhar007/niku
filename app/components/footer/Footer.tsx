@@ -8,6 +8,9 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   return (
     <>
+      <div className="wrapSvgFooter">
+
+      </div>
       <footer className="footer">
         <div className="wrapContainer">
           <div className="wrapFooter">
@@ -92,6 +95,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </footer>
+
       <section className="credit">
         <div className="wrapContainer">
           <p>Made With ❤️ By <Link href="https://wandaazhar.vercel.app" target='_blank'>Wanda Azhar </Link> © 2023 In Michigan, USA 🇺🇸</p>

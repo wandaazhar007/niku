@@ -3,6 +3,7 @@
 
 .header {
   // border: .1rem solid salmon;
+  // z-index: 9;
 
   .wrapContainer {
     .boxHeader {
@@ -148,16 +149,57 @@
   }
 }
 
-.svgWave {
-  display: flex;
+.wrapSvgNav {
+  width: 100%;
+  max-width: 133.4rem;
+  margin: 0 auto;
+  position: relative;
+  // overflow: hidden;
+  // height: 20rem;
+  // border: .1rem solid salmon;
 
-  svg {
+  @include largePhone {
+    position: static;
     // border: .1rem solid salmon;
-    // box-shadow: $boxShadow;
-    filter: drop-shadow(1px 5px 2px rgb(0 0 0 / 0.2));
-    // filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
-    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    // height: 5rem;
-    // width: 100%;
+  }
+
+  .svgNav {
+    position: absolute;
+    top: 3rem;
+    z-index: -99;
+
+    // @include largePhone {
+    //   top: 9rem;
+    // }
+
+    img {
+      filter: drop-shadow(1px 5px 2px rgb(0 0 0 / 0.2));
+      object-fit: fill;
+      width: 100%;
+      // border: .1rem solid green;
+    }
   }
 }
+
+// .wrapSvgBottom {
+//   width: 90%;
+//   max-width: 133.4rem;
+//   margin: 0 auto;
+//   position: relative;
+
+//   .svgWaveBottom {
+//     position: absolute;
+//     top: 5rem;
+//     z-index: -99;
+
+//     @include largePhone {
+//       top: 3rem;
+//     }
+
+//     img {
+//       filter: drop-shadow(1px 5px 2px rgb(0 0 0 / 0.2));
+//       object-fit: contain;
+//       width: 100%;
+//     }
+//   }
+// }
