@@ -20,6 +20,7 @@
     "next-auth": "^4.23.1",
     "react": "latest",
     "react-dom": "latest",
+    "react-paginate": "^8.2.0",
     "sass": "^1.68.0",
     "sharp": "^0.32.6",
     "swiper": "^10.3.1"
